@@ -1,0 +1,327 @@
+
+/* PRECONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E1F1F6;
+}
+
+a {
+    all: unset;
+}
+
+/* HOMEPAGE / PRESENTACIÓN PÁGINA */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    background-color: #BDE6F1;
+    gap: 20px;
+    padding: 10px;
+
+    height: 100px;
+}
+
+#logo-clinica{
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.titulo-header{
+    /* border: red 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: auto;
+}
+
+.titulo-header h1, .titulo-header h2{
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.separador-contenidos {
+    width: 100%;
+    height: 0.5px;
+    background-color: #a7a7a7;
+    margin: 15px 0px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    margin: 10px;
+}
+
+.contenido-principal {
+    /* width: 100%; */
+    flex: 2;
+    
+}
+
+.subtitulo-contenido-principal {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0a9c6d;
+}
+
+.imagen-contenido-principal {
+    width: 500px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* MENU LATERAL */
+
+.menu-lateral {
+    width: 190px;
+    background-color: #002B7F;;
+
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.menu-lateral h3 {
+    color: #f5f5f5;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.menu-lateral-lista {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-lateral-elemento {
+    margin: 5px;
+}
+/* TABLAS */
+
+.tabla-profesionales {
+    width: 80%;
+    height: 800px;
+    border-collapse: collapse;
+    border: 1px solid #a7a7a7;
+    background-color: #cbcbcb3c;
+    margin-top: 20px;
+}
+
+.tabla-profesionales th,
+.tabla-profesionales td {
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid 1px #a7a7a7;
+}
+
+/* Avatar tabla*/
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border: solid 1px #000000;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.avatar:hover {
+    border: #ff0000 solid 1px;
+}
+
+/* FORMULARIOS */
+
+.contenedor-agendar-turno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.informacion-basica-profesional {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 100px;
+}
+
+.foto-profesional {
+    width: 250px;
+    height: 250px;
+    border: solid 2px #000000;
+    margin: 5px auto;
+}
+
+.datos-profesional ul {
+    list-style: none;
+}
+
+.datos-profesional li {
+    margin: 20px;
+    font-size: 20px;
+    background-color: #0fa978;
+    color: #f5f5f5;
+    padding: 8px;
+}
+
+.nombre-profesional {
+    text-align: center;
+}
+
+.formulario-agendar-turno {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.formulario-titulo {
+    color: #f5f5f5;
+    background-color: #002B7F;
+    font-size: 20px;
+    font-weight: normal;
+    width: 60%;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.formulario-datos {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 40%;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input-formulario {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.botones-formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* BOTONES */
+
+.boton {
+    background-color: #66a2b4;
+    color: #f5f5f5;
+    padding: 10px;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.boton:hover {
+    background-color: #C34F4F;
+}
+
+#boton-contacto {
+    margin-top: 30px;
+    background-color: #44b644;
+}
+
+#boton-contacto:hover {
+    background-color: #C34F4F;
+}
+
+#boton-volver {
+    display: inline-block;
+    margin: 20px auto;
+    background-color: #66a2b4;
+    color: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-volver:hover {
+    background-color: #C34F4F;
+}
+
+#boton-agendar-turno {
+    background-color: #44b644;
+    color: #f5f5f5;
+    font-size: 18px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-agendar-turno:hover {
+    background-color: #C34F4F;
+}
+
+#boton-volver-listado {
+    background-color: #66a2b4;
+    color: #f5f5f5;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-volver-listado:hover {
+    background-color: #C34F4F;
+}
+
+#boton-enviar {
+    background-color: #44b644;
+    color: #f5f5f5;
+    font-size: 18px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-enviar:hover {
+    background-color: #C34F4F;
+}
+
+#boton-volver-inicio-formulario {
+    background-color: #66a2b4;
+    color: #f5f5f5;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-volver-inicio-formulario:hover {
+    background-color: #C34F4F;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../stylesheet.css">
+    <link rel="icon" href="../../imagenes/logoClinica.png" type="image/png">
+
+    <title>Agendar turno | Dra. Castro, María</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="/../../index.html"><img src="../../imagenes/logoClinica.png" alt="logo-clinica"
+                title="Clínica del sol" id="logo-clinica"></a>
+
+        <div class="titulo-header">
+            <h1>Clínica del Sol S.R.L</h1>
+            <h2>Sistema de Gestión de Turnos Médicos</h2>
+        </div>
+    </header>
+
+    <div class="separador-contenidos"></div>
+
+    <main class="contenedor">
+        <div class="menu-lateral">
+            <h3>Seleccione la Especialidad Médica</h3>
+
+            <ul class="menu-lateral-lista">
+                <li class="menu-lateral-elemento"><a class="boton"
+                        href="../../sitios/especialidad/clinicaGeneral.html">Clínica General</a></li>
+                <li class="menu-lateral-elemento"><a class="boton"
+                        href="../../sitios/especialidad/gastroenterologia.html">Gastroenterología</a></li>
+                <li class="menu-lateral-elemento"><a class="boton"
+                        href="../../sitios/especialidad/cardiologia.html">Cardiología</a></li>
+                <li class="menu-lateral-elemento"><a class="boton"
+                        href="../../sitios/especialidad/pediatria.html">Pediatría</a></li>
+                <li class="menu-lateral-elemento"><a class="boton"
+                        href="../../sitios/especialidad/oncologia.html">Oncología</a></li>
+
+                <li class="menu-lateral-elemento"><a class="boton" id="boton-contacto"
+                        href="../../sitios/contacto/contacto.html">Contáctenos</a></li>
+            </ul>
+        </div>
+
+        <div class="contenido-principal">
+            <div class="contenedor-agendar-turno">
+                <div class="informacion-basica-profesional">
+                    <figure>
+                        <img class="foto-profesional"
+                            src="../../imagenes/medicosAvatar/pediatria/avatarCastroMaria.JPG"
+                            alt="Foto retrato de la Dra. Castro, María" title="Foto retrato de la Dra. Castro, María">
+                    </figure>
+                    <div class="datos-profesional">
+                        <ul>
+                            <li class="nombre-profesional"><strong>Dra. Castro, María</strong></li>
+                            <li><strong>Especialidad</strong>: Pediatría</li>
+                            <li><strong>Días de Atención</strong>: Lunes - Miércoles</li>
+                            <li><strong>Horario</strong>: 08:00 - 12:00</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="formulario-titulo">DATOS DEL PACIENTE</h3>
+
+                <div class="formulario-agendar-turno">
+
+                    <form action="" method="get" class="formulario-datos">
+                        <label for="apellido">Apellido:</label>
+                        <input class="input-formulario" type="text" class="apellido" name="apellido" placeholder="Rojas"
+                            required>
+
+                        <label for="nombre">Nombres:</label>
+                        <input class="input-formulario" type="text" class="nombre" name="nombre" placeholder="Juan Carlos"
+                            required>
+
+                        <label for="DNI">DNI:</label>
+                        <input class="input-formulario" type="text" class="DNI" name="DNI" placeholder="12345678" required>
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input class="input-formulario" type="email" class="email" name="correo-electronico"
+                            placeholder="jrojas@gmail.com">
+
+                        <label for="fecha-turno">Fecha Turno:</label>
+                        <input class="input-formulario" type="text" class="fecha-turno" name="fecha-turno"
+                            placeholder="22/03/2025" required>
+
+                        <label for="hora-turno">Hora Turno:</label>
+                        <input class="input-formulario" type="text" class="hora-turno" name="hora-turno"
+                            placeholder="09:00" required>
+
+                        <div class="botones-formulario">
+                            <input type="submit" value="Agendar Turno" id="boton-agendar-turno">
+                            <a href="../../sitios/especialidad/pediatria.html" id="boton-volver-listado">Volver
+                                al listado</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
